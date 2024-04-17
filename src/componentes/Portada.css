@@ -1,0 +1,59 @@
+/* Estilos generales para la portada del juego */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #9af8ff 0%, lightsalmon 99%, #05aecc 100%); /* Degradado vibrante */
+    color: #333; /* Color de texto principal */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y estilizada */
+   }
+   
+   .imagen{
+    border-radius: 3px ;
+   }
+
+   /* Estilos para el título */
+   h1 {
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 45px;
+    padding: 5px;
+    color: #f57c00; /* Naranja */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    animation: fadeIn 2s ease-in-out;
+   }
+   
+   /* Estilos para el botón */
+   .main .boton {
+    font-size: 30px;
+    border-radius: 6px;
+    background-color: #f57c00; /* Naranja */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+   }
+   
+   /* Efecto al pasar el cursor sobre el botón */
+   .main .boton:hover {
+    background-color: #ff9a9e; /* Naranja más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el cursor */
+   }
+   
+   /* Animación de entrada para el título */
+   @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+   }
+   
+   /* Animación de pulso para el botón */
+   @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+   }
+   

@@ -1,3 +1,4 @@
+import "./Ganado.css"
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -9,7 +10,9 @@ const Ganado = () => {
     <div className="imagen">
       <img src={require(`../assets/el_ahorcado1.png`)} alt=""/>
     </div>
-    <button onClick={()=>navegacion("/juego/")}>Volver a Jugar</button>
+    <div className="botonvolver">
+      <button onClick={()=>navegacion("/juego/")}>Volver a Jugar</button>
+    </div>
     </>
   )
 }

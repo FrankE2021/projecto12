@@ -1,0 +1,19 @@
+/* Estilos para el botón */
+ .botoncorregir button {
+    font-size: 30px;
+    border-radius: 6px;
+    background-color: #f57c00; /* Naranja */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+   }
+   
+   /* Efecto al pasar el cursor sobre el botón */
+.boton:hover {
+    background-color: #ff9a9e; /* Naranja más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el cursor */
+}

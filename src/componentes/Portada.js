@@ -1,3 +1,4 @@
+import "./Portada.css"
 import { useNavigate } from "react-router-dom"
 
 
@@ -5,8 +6,13 @@ const Portada = () => {
   const navegacion=useNavigate();
     return (
     <>
-      <h1>BIENVENIDO/A</h1>
-      <button className="boton" onClick={()=>navegacion("/juego")}>Jugar</button>
+    <div className="main">
+      <div className="imagen">
+        <img src={require(`../assets/logo.png`)} alt=""/>
+      </div>
+      
+      <button className="boton" onClick={()=>navegacion("/juego")}>JUGAR</button>
+    </div>
     </>
   )
 }

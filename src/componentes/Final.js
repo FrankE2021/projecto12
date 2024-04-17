@@ -10,9 +10,11 @@ const Final = () => {
     <h1>Vaya, respuesta incorrecta</h1>
     <h2>La respuesta correcta era: <strong>{laCorrecta}</strong></h2>
     <div className="imagen">
-      <img src={require(`../assets/el_ahorcado1.png`)} alt=""/>
+      <img src={require(`../assets/el_ahorcado6.png`)} alt=""/>
     </div>
-    <button onClick={()=>navegacion("/juego/")}>Volver a Jugar</button>
+    <div className="botonvolver">
+      <button onClick={()=>navegacion("/juego/")}>Volver a Jugar</button>
+    </div>
     </>
   )
 }

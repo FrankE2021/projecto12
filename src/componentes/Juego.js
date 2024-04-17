@@ -1,3 +1,4 @@
+import "./Juego.css"
 import { useContext, useEffect, useState } from "react"
 import { PALABROS } from "../assets/palabros"
 import { useNavigate } from "react-router-dom"
@@ -49,8 +50,9 @@ const Juego = () => {
     },[correctas])
   return (
     <>
+    <strong>Pregunta:</strong>
     <div className="pregunta">
-      {PALABROS[azar].pregunta}
+      {PALABROS[azar].pregunta} ?
     </div>
     <div className="palabra">
       {
